@@ -1,0 +1,18 @@
+{
+  "name": "crypton-studio",
+  "version": "1.0.0",
+  "description": " test task for an internship in crypton studio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ezzahid Ilyas",
+  "license": "ISC",
+  "dependencies": {
+    "tsc": "^2.0.3",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.1"
+  }
+}
