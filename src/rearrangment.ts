@@ -1,10 +1,11 @@
 import fs from "fs";
+import path from "path";
 
 export default function rearrangment(N: number): number {
   let content = "";
   let lines = 0;
   let nums = generateNum(N);
-  const filename = "./rearrange_numbers.txt";
+  const filename = path.join(__dirname, "rearranged_numbers.txt");
 
   const rearrange = (nums: number[], left: number, right: number) => {
     if (left == right) {
@@ -38,5 +39,8 @@ function generateNum(N: number): number[] {
   return [...arrZeros, ...arrOfNums];
 }
 
-const linesInFile = rearrangment(2);
-console.log(linesInFile);
+// Test 2
+console.log(
+  "\n Test 2 => All possible rearrangment of a list of numbers: ex N = 2 "
+);
+console.log("Number of lines: ", rearrangment(2));

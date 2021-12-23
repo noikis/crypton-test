@@ -40,3 +40,6 @@ export function getStatistics(marks: Student[]): Statistics {
     lowestMark,
   };
 }
+
+console.log("\n Test 1 => get Statistics: ");
+console.log(getStatistics(testMarks));
