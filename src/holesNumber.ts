@@ -30,3 +30,7 @@ export default function holesNumber(nums: number[]): NumWithHoles[] {
 
   return result.sort((a, b) => a.holes - b.holes);
 }
+
+// Test 3
+console.log("\n Test 3 => numbers of holes: ");
+console.log(holesNumber([1, 6, 480, 80, 62, 3]));
